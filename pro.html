@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online MCQ Test Platform</title>
+    <link rel="stylesheet" href="pro.css">
+</head>
+
+<body>
+    <div class="main-container">
+        
+        <div class="card-box" id="start-box">
+            <h1 class="card-title">Test your knowledge</h1>
+            <div class="instructions">
+                <h3>Instructions:</h3>
+                <ul>
+                    <li><strong>Subject:</strong> Frontend</li>
+                    <li><strong>Total Questions:</strong> 15</li>
+                    <li><strong>Time:</strong> 15 mins</li>
+                    <li><strong>Scoring:</strong> +1 per correct answer</li>
+                </ul>
+            </div>
+            <button class="btn" id="start-btn">Start Test</button>
+        </div>
+
+        <div class="card-box hide" id="quiz-box">
+            <div style="width: 100%; display: flex; justify-content: space-between;">
+                <span id="question-count">Question 1 of 15</span>
+                <span id="timer" style="color: red; font-weight: bold;">15:00</span>
+            </div>
+            
+            <h2 id="question-text" style="text-align: center; margin: 20px 0;">Question goes here?</h2>
+            
+            <div id="options-container" style="width: 100%; display: flex; flex-direction: column; gap: 10px;">
+                </div>
+
+            <div style="width: 100%; display: flex; gap: 10px; margin-top: 20px;">
+                <button class="btn" id="prev-btn" style="background-color: #ccc;" disabled>Previous</button>
+                <button class="btn" id="next-btn">Next</button>
+                <button class="btn" id="submit-btn" style="background-color: #22c55e; display: none;">Submit</button>
+            </div>
+        </div>
+
+       <div class="card-box hide" id="result-box" style="text-align: center;">
+    <h1 class="card-title">Result</h1>
+    <h2 id="score-text" style="font-size: 40px; margin: 20px 0;">0 / 15</h2>
+    <p id="score-percent">0%</p>
+
+    <div id="answer-review" style="text-align: left; width: 100%; margin: 20px 0; max-height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; border-radius: 5px; background: #f9f9f9;">
+        </div>
+
+    <button class="btn" onclick="location.reload()">Retake Test</button>
+</div>
+
+    </div>
+
+
+
+
+
+    <script src="pro.js"></script>
+    
+</body>
+
+</html>
